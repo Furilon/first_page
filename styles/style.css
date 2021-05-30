@@ -1,6 +1,8 @@
-body {
+#wrapper {
     display: flex;
     flex-flow: column nowrap;
+    position: relative;
+    height: 100vh;
 }
 
 #header {
@@ -24,9 +26,12 @@ body {
 #footer {
     display: flex;
     flex-flow: row wrap;
-    height: 100px;
-    width: auto;
     background-color: rgb(168, 116, 168);
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+
 }
 
 ul {
@@ -36,9 +41,11 @@ ul {
     align-items: center;
 }
 
-img#logo {
+#logo {
     max-width: 100%;
     height: auto;
+    margin-top: 120px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -66,16 +73,16 @@ button:hover {
 #searchbar {
     display: flex;
     border: 1px solid rgb(233, 233, 233);
-    border-radius: 40px;
+    border-radius: 20px;
     min-height: 38px;
     min-width: 380px;
-    height: 60px;
-    width: 700px;
+    height: 45px;
+    width: 600px;
     max-height: 60px;
     max-width: 700px;
     justify-content: center;
     align-items: center;
-    margin: 30px none;
+    margin-bottom: 20px;
 }
 
 #searchbar:hover {
